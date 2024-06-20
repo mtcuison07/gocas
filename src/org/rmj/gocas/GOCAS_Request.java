@@ -15,6 +15,15 @@ public class GOCAS_Request {
     private static final String ERRLOG = "D:/GGC_Java_Systems/temp/gocas.err";
     
     public static void main(String [] args){
+        String path;
+        if(System.getProperty("os.name").toLowerCase().contains("win")){
+            path = "D:/GGC_Java_Systems";
+        }
+        else{
+            path = "/srv/GGC_Java_Systems";
+        }
+        System.setProperty("sys.default.path.config", path);
+        
         //delete files
         File loFile;
         loFile = new File(APPLOG);

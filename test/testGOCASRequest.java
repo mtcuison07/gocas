@@ -15,7 +15,7 @@ public class testGOCASRequest {
     public static void main(String [] args){
         String [] argx = new String [1];
 
-        argx[0] = "C0ZGN2200136";
+        argx[0] = "D3K662300302";
         
         GOCAS_Request.main(argx);
     }
